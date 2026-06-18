@@ -1,0 +1,15 @@
+NEEVA AI Code Safety Review Report
+=============================================
+
+Summary
+---------------------------------------------
+TOTAL ISSUES: 0
+HIGH: 0
+MEDIUM: 0
+LOW: 0
+
+Category Summary
+---------------------------------------------
+No categories found.
+
+No risky patterns found.

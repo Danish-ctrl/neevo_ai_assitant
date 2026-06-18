@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --name NEEVA gui_app.py

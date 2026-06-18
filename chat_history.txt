@@ -1,0 +1,7 @@
+[23:07] AI: Hi 👋 I am your Weather AI assistant
+
+[23:07] USER: how is 
+it there ?
+
+[23:07] AI: ☀️ It's a lovely day in Berlin! The clear sky is perfect, and with a temperature of 7.25°C, it's crisp and refreshing. You might want to pack a light jacket though, as it's a bit chilly. Enjoy the sunshine!
+

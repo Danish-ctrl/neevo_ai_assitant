@@ -1,0 +1,57 @@
+NEEVA AI Code Safety Review Report
+=============================================
+
+Issue #1
+Severity: HIGH
+Rule: Possible Hardcoded API Key
+File: sample_project\unsafe_code.py
+Line: 1
+Code: API_KEY = "abc123-secret-key"
+Explanation: A secret or API key may be hardcoded in the source code.
+---------------------------------------------
+
+Issue #2
+Severity: HIGH
+Rule: Possible Hardcoded API Key
+File: sample_project\unsafe_code.py
+Line: 2
+Code: password = "my_password"
+Explanation: A secret or API key may be hardcoded in the source code.
+---------------------------------------------
+
+Issue #3
+Severity: MEDIUM
+Rule: Debug Mode Enabled
+File: sample_project\unsafe_code.py
+Line: 4
+Code: DEBUG = True
+Explanation: Debug mode should not be enabled in production.
+---------------------------------------------
+
+Issue #4
+Severity: HIGH
+Rule: Unsafe eval usage
+File: sample_project\unsafe_code.py
+Line: 6
+Code: eval("print('danger')")
+Explanation: eval() can execute arbitrary code and may create security risks.
+---------------------------------------------
+
+Issue #5
+Severity: HIGH
+Rule: Subprocess shell=True
+File: sample_project\unsafe_code.py
+Line: 9
+Code: subprocess.run("dir", shell=True)
+Explanation: shell=True can create command injection risks if user input reaches the command.
+---------------------------------------------
+
+Issue #6
+Severity: MEDIUM
+Rule: Insecure HTTP URL
+File: sample_project\unsafe_code.py
+Line: 11
+Code: url = "http://example.com"
+Explanation: HTTP is not encrypted. Prefer HTTPS for communication.
+---------------------------------------------
+

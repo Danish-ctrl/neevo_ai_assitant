@@ -1,0 +1,50 @@
+# Credentials and Keys
+.env
+*.json
+!package.json
+credentials/
+tokens/
+
+# Databases
+*.db
+*.sqlite3
+
+# Python environment
+__pycache__/
+*.pyc
+venv/
+.venv/
+.DS_Store
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+.env
+
+# Build
+build/
+dist/
+*.spec
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Logs
+*.log
+
+# Database (if generated locally)
+*.db
