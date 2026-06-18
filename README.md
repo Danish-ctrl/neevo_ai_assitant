@@ -33,7 +33,7 @@ The LLM analyzes your request, determines the required action, and delegates it 
 
 Example:
 
-> "Email John that I'll be 15 minutes late tomorrow."
+> "Email John that I'll be 15 minutes late tomorrow."      NOTE: Don't forget to mention the email ID of the receiver
 
 ↓
 
