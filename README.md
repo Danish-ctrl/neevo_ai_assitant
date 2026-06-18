@@ -155,76 +155,23 @@ The background engine continuously monitors scheduled reminders while allowing t
 
 ## 📂 Project Structure
 
-NeEvo/
+neevo_ai_assistant/
 │
-├── assets/                    # Images, icons, sounds
-│   ├── logo.png
-│   ├── icons/
-│   └── audio/
+├── core/
+│   └── database.py          # Local SQLite database & state manager
 │
-├── core/                      # Core AI engine
-│   ├── orchestrator.py
-│   ├── ai_client.py
-│   ├── prompt_builder.py
-│   ├── config.py
-│   └── __init__.py
+├── tools/
+│   ├── gmail_tool.py        # Email orchestration agent
+│   ├── weather_tool.py      # Weather API & search agent
+│   └── reminder_tool.py     # Local trigger & reminder tool
 │
-├── agents/                    # All AI agents
-│   ├── __init__.py
-│   ├── email_agent.py
-│   ├── reminder_agent.py
-│   ├── web_agent.py
-│   └── chat_agent.py
-│
-├── gui/                       # Desktop interface
-│   ├── gui_app.py
-│   ├── windows/
-│   ├── widgets/
-│   └── themes/
-│
-├── services/                  # External integrations
-│   ├── gmail_service.py
-│   ├── weather_service.py
-│   ├── web_search_service.py
-│   └── notification_service.py
-│
-├── database/
-│   ├── neevo.db
-│   ├── database.py
-│   └── migrations/
-│
-├── scheduler/                 # Background reminder engine
-│   ├── daemon.py
-│   ├── reminder_checker.py
-│   └── timer.py
-│
-├── tools/                     # Utility functions
-│   ├── helpers.py
-│   ├── logger.py
-│   ├── validators.py
-│   └── file_utils.py
-│
-├── data/                      # Runtime data
-│   ├── chat_history.txt
-│   ├── reports/
-│   └── cache/
-│
-├── tests/
-│   ├── test_agents.py
-│   ├── test_scheduler.py
-│   └── test_database.py
-│
-├── docs/
-│   ├── architecture.md
-│   ├── screenshots/
-│   └── api.md
-│
-├── .env
-├── .gitignore
-├── LICENSE
-├── README.md
-├── requirements.txt
-└── main.py
+├── .env                     # Private API keys & passwords (Hidden from Git)
+├── .gitignore               # Tells Git which files to ignore (.env, venv, caches)
+├── config.py                # Secure configuration bridge to load environment variables
+├── main.py                  # Project entry point & Tkinter Desktop interface
+├── orchestrator.py          # AI Brain / Multi-agent router (Llama-3 integration)
+├── README.md                # Main repository documentation page
+└── requirements.txt         # List of required Python dependencies
 
 ## ⚙ Installation
 
