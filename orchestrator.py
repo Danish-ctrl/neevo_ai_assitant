@@ -67,7 +67,7 @@ def process_command(user_input: str) -> dict:
 
     try:
         response = client.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model="openai/gpt-oss-20b",
             messages=messages,
             response_format={"type": "json_object"},
             temperature=0.0 
